@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="../../base.css">
+    <link rel="stylesheet" href="./OnePager.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+</head>
+
+<body>
+    <!-- header area -->
+    <header class="mainNav">
+        <div class="MNright">
+            <div>
+                <img class="logo"
+                    src="https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/747409/tubics-logo.png"
+                    alt="tubics logo">
+            </div>
+            <div class=" MNright MNvideoData">
+                <img class="MNHeaderThumbnail"
+                    src="https://www.howtogeek.com/wp-content/uploads/2019/10/youtube-logo.jpg?height=200p&trim=2,2,2,2"
+                    alt="tubics logo">
+                <h4> This is the title of the video </h4>
+            </div>
+
+        </div>
+        <div class="updateButton">
+            <button role="button"> UPDATE ON YOUTUBE</button>
+        </div>
+    </header>
+    <!-- edit area -->
+    <form class="EditVideo" name="EditVideo">
+        <!-- <div class="mdc-form-field">
+            <div class="mdc-checkbox">
+                <input type="checkbox" id="my-checkbox" class="mdc-checkbox__native-control"
+                    value="this is my material design form" />
+                <div class="mdc-checkbox__background">
+                    this is my material design form
+                </div>
+            </div>
+            <label for="my-checkbox">This is my checkbox</label>
+        </div> -->
+        <label class="EditingBoard" for="title">Video Title</label>
+        <input class="EditingBoard" type="text" id="VidTitleField" name="title" value="this is the title of your video">
+        <label class="EditingBoard" for="description">Video description</label>
+        <input class="EditingBoard" type="text" id="VideoDescription" name="description"
+            value="this is the video description">
+        <label class="EditingBoard" for="description">Video tags</label>
+        <input class="EditingBoard" type="text" id="tags" name="tags" value="this is the video tags">
+        <label class="EditingBoard" for="avatar">Choose another thumbanil:</label>
+        <input class="EditingBoard" type="file" id="thumbanilUpload" name="thumbanilUpload"
+            accept="image/png, image/jpeg">
+
+        <hr>
+    </form>
+    <!-- recs area -->
+    <div class="AllRecs" id="AllRecs">
+        <h5>Thins to fix</h5>
+        <div class="rec SMTitle">
+            <div class="RecHeader">
+                <div role="button" class="RecHeaderRight">
+                    <div class="errorIndication"></div>
+                    <p class="RecTitle">This is the title of the rec</p>
+                </div>
+                <div class="EC">
+                    <p><i class="arrow down"></i></p>
+                </div>
+
+            </div>
+            <div class="recContent">
+                <div class="RecText">
+                    <p class="whatsWrong">this is what went wrong</p>
+                    <p class="HowToFixIt">this is how to fix it went wrong</p>
+                </div>
+                <div class="IntElement">
+                    <p class="ToDo"><strong>do this</strong> </p>
+                    <button> Please do this</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="rec TitleLength">
+            <div class="RecHeader">
+                <div role="button" class="RecHeaderRight">
+                    <div class="errorIndication"></div>
+                    <p class="RecTitle">Title Length</p>
+                </div>
+                <div class="EC">
+                    <p><i class="arrow down"></i></p>
+                </div>
+
+            </div>
+            <div class="recContent">
+                <div class="RecText">
+                    <p class="whatsWrong">this is what went wrong</p>
+                    <p class="HowToFixIt">this is how to fix it went wrong</p>
+                </div>
+                <div class="IntElement">
+                    <p class="ToDo"> <strong>do this</strong></p>
+                    <button> Please do this</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rec DescTags">
+            <div class="RecHeader">
+                <div role="button" class="RecHeaderRight">
+                    <div class="thirderrorIndication"></div>
+                    <p class="RecTitle">Add tags to description</p>
+                </div>
+                <div class="EC">
+                    <p><i class="arrow down"></i></p>
+                </div>
+
+            </div>
+            <div class="recContent">
+                <div class="RecText">
+                    <p class="whatsWrong">this is what went wrong</p>
+                    <p class="HowToFixIt">this is how to fix what went wrong</p>
+                </div>
+                <div class="IntElement">
+                    <p class="ToDo"> <strong>do this</strong></p>
+                    <div role="button">
+                        <p role="button" class="tagChip">Tourism in Austria</p>
+                        <p role="button" class="tagChip">Skiing in Austria</p>
+                        <p role="button" class="tagChip">Winter holiday in Austria</p>
+                    </div>
+                    <div class="tagSuccess" hidden>Tags are added successfully</div>
+
+                    <button class="addTag"> ADD ALL </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./OnePager.js"></script>
+</body>
+
+</html>
